@@ -54,8 +54,8 @@
 					<a href="<?=BASEURI?>admin/sys/user_delete?uid=<?=$user->uid ?>" onclick="return confirm('删除不可恢复，您确实要删除数据吗？')"><img src="<?=RESOURCE?>images/ico/delete.gif" class="ico" /> 删除用户</a>
 					<?php endif;?>
 				</td>
-				<td class="pl5"><?=$user->reg_ip?>(<?=IpLocation::getAddressByIP($user->reg_ip)?>)</td>
-				<td class="pl5"><?=$user->login_ip?>(<?=IpLocation::getAddressByIP($user->login_ip)?>)</td>
+				<td class="pl5"><?=$user->reg_ip?></td>
+				<td class="pl5"><?=$user->login_ip?></td>
 			</tr>
 			<?php endforeach;?>
 		</table>

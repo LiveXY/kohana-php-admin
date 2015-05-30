@@ -129,12 +129,7 @@ class Util {
 		if (!$city) $city = self::getSinaData($ip);
 		if (!$city) $city = self::getIpipData($ip);
 		if (!$city) $city = self::getBaiduData($ip);
-		//if (!$city) $city = self::getQQWryData($ip);
 		return $city;
-	}
-	public static function getQQWryData($ip) {
-		$city = array('country'=>IpLocation::getAddressByIP($ip), 'region'=>'', 'city'=>'', 'county'=>'');
-		return $address;
 	}
 	public static function getTaobaoData($ip) {
 		$data = self::curl("http://ip.taobao.com/service/getIpInfo.php?ip=$ip");

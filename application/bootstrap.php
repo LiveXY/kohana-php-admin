@@ -154,5 +154,4 @@ Route::set('crontab', 'crontab(/<controller>(/<action>))')->defaults(array('dire
 
 
 require APPPATH.'classes/AppConfig'.EXT;
-require APPPATH.'classes/ip/iplocation'.EXT;
 

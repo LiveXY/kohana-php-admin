@@ -31,7 +31,7 @@
 				<td class="pl5"><?=$info->id?></td>
 				<td class="pl5"><a href="#" class="userControl" uid="<?=$info->uid?>"><?=$info->uid?></a></td>
 				<td class="pl5"><?=$info->url?></td>
-				<td class="pl5"><?=$info->ip?></td>
+				<td class="pl5"><?=$info->ip?>-<?=IpLocation::getAddressByIP($info->ip)?></td>
 				<td class="center"><?=date('Y-m-d H:i', $info->ltime)?></td>
 				<td class="pl5"><?=$info->request?></td>
 			</tr>

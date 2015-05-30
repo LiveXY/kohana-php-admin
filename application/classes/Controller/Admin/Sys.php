@@ -13,9 +13,9 @@ class Controller_Admin_Sys extends AdminController {
 			if (!$json[$id]) continue;
 
 			unset($json[$id]->password, $json[$id]->user_salt);
-			$json[$id]->regip = $json[$id]->regprovince.$json[$id]->regcity.$json[$id]->regarea;
+			$json[$id]->regip = IpLocation::getAddressByIP($json[$id]->reg_ip);
 			$json[$id]->reg_date = date('Y-m-d H:i:s', $json[$id]->reg_date);
-			$json[$id]->loginip = '';
+			$json[$id]->loginip = empty($json[$id]->login_ip) ? '' : IpLocation::getAddressByIP($json[$id]->login_ip);
 			$json[$id]->login_date = $json[$id]->login_date == 0 ? '' : date('Y-m-d H:i:s', $json[$id]->login_date);
 			$json[$id]->avatar = Util::getAvatar($json[$id]->avatar);
 		}

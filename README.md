@@ -22,3 +22,9 @@ yum install php-pecl-memcache php-pecl-sqlite
 
 ```
 ###配置nginx或apache
+
+###效果
+![图片](https://github.com/hcxiong/kohana-php-admin/blob/master/20150530192639.jpg?raw=true)
+![图片](https://github.com/hcxiong/kohana-php-admin/blob/master/20150530192708.jpg?raw=true)
+![图片](https://github.com/hcxiong/kohana-php-admin/blob/master/20150530192738.jpg?raw=true)
+![图片](https://github.com/hcxiong/kohana-php-admin/blob/master/20150530192838.jpg?raw=true)

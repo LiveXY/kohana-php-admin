@@ -25,17 +25,17 @@ body { font-size:13px; }
 			<table>
 				<tr>
 					<th>用户名：</th>
-					<td><input type="text" name="username" style='width:150px' /></td>
+					<td><input type="text" name="username" style='width:150px' value="admin" /></td>
 					<td></td>
 				</tr><tr>
 					<th>密码：</th>
-					<td><input type="password" name="password" style='width:150px' /></td>
+					<td><input type="password" name="password" style='width:150px' value="admin" /></td>
 					<td></td>
-				</tr><tr>
+				</tr><tr style="display:none">
 					<th>验证码：</th>
 					<td><input type="text" name="captcha" style='width:150px' /></td>
 					<td></td>
-				</tr><tr>
+				</tr><tr style="display:none">
 					<th></th>
 					<td><img src="<?=BASEURI?>captcha" onclick="this.src='<?=BASEURI?>captcha?'+Math.random()" style="cursor:pointer" /></td>
 					<td></td>

@@ -4,6 +4,18 @@ class Model_Sys extends Model {
 	public function __construct() {
 		parent::__construct();
 	}
+	public function updateLoginData($user, $type = 0, $ver = '') {
+		if (!$user) return false;
+		$data = array();
+		$data["login_times"] = $user->login_times + 1;
+		$data['login_ip'] = Util::getIP();
+		$data['login_date'] = TIMESTAMP;
+
+		Model::factory("Sys")->updateUser($user->uid, $data);
+		CacheManager::removeUser($user->uid);
+
+		Model::factory("App")->logUserLogin(array('uid'=>$user->uid, 'utype'=>$type, 'ldate'=>TIMESTAMP, 'ip'=>Util::getIP(), 'ver'=>$ver));
+	}
 	public function register($username, $usernick = '', $utype = 'web', $locale = 'zh_CN') {
 		$ip = Util::getIP();
 		$city = false;

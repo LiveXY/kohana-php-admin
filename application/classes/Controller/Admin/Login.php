@@ -13,7 +13,7 @@ class Controller_Admin_Login extends BaseController {
 		$captcha 			= $this->request->post('captcha');
 
 		if($username AND $password) {
-			if(Captcha::valid($captcha)) {
+			//if(Captcha::valid($captcha)) {
 				$passport = $this->getpassport($username, $password);
 				if (!is_object($passport)) {
 					if ($passport == -1) {
@@ -30,12 +30,12 @@ class Controller_Admin_Login extends BaseController {
 				} else {
 					$user_id = $passport->uid;
 					$user = $this->login($user_id);
-					User::updateLoginData($user, 3);
+					Model::factory('Sys')->updateLoginData($user, 3);
 					return $this->redirect(ROOTURL.'/admin/main/index');
 				}
-			} else {
-				$DATA['msg'] = '登陆失败，验证码错误！';
-			}
+			//} else {
+			//	$DATA['msg'] = '登陆失败，验证码错误！';
+			//}
 		} else $DATA['msg'] = '用户名或者Email错误！';
 
 		echo View::factory('admin/login/index', $DATA);

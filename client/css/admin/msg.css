@@ -1,0 +1,101 @@
+.syshtml {overflow:hidden;width:100%;height:100%; }
+.syshtml body { }
+.show { display:block; } .hide { display:none; }
+
+.syswindow { position:fixed; display:block; font-size:12px; z-index:999; top:-1000px; left:-1000px; background-color:#fff;border:1px solid #666; background-color:#fff; border-radius:4px; -webkit-border-radius: 4px;-moz-border-radius: 4px; -moz-box-shadow:1px 3px 7px #666; -webkit-box-shadow:1px 3px 7px #666; box-shadow:1px 3px 7px #666 }
+.syswindow_gray { position:fixed; display:block; width:100%;height:100%; background-color:#333;left:0px;top:0px;opacity:0.4;filter:alpha(opacity=40);z-index:998; }
+.syswindow .cls { clear:both; }
+
+.syswindow .msg_top { height:33px; cursor:move; }
+.syswindow .msg_top .msg_rt{ height:33px; width:13px; float:right;  }
+.syswindow .msg_top .msg_lt{ height:33px; width:13px; float:left; }
+.syswindow .msg_top .msg_ct{ height:33px; float:left; }
+.syswindow .msg_top .msg_ct .title { font-size:16px; padding-left:15px; color:#000; padding-top:10px; white-space:nowrap; word-spacing:normal; word-break: break-all; overflow:hidden;}
+.syswindow .msg_top .msg_ct .b_close { float:right; background:url(img/close16x16.png) no-repeat; width:16px; height:16px; cursor:pointer; margin-top:10px;}
+.syswindow .msg_top .msg_ct .b_close_active { float:right; background:url(img/close16x16.png) no-repeat; width:16px; height:16px; cursor:pointer; margin-top:10px;}
+.syswindow .msg_top .msg_ct .msg_close { float:right; width:149px; }
+
+.syswindow .msg_mid { }
+.syswindow .msg_mid .msg_rm{ cursor:move; width:13px; float:right;  }
+.syswindow .msg_mid .msg_lm{ cursor:move; width:13px; float:left;  }
+.syswindow .msg_mid .msg_cm{ float:left; background-color:#fff; _padding-left:2px; }
+.syswindow .msg_mid .msg_cm .icon { padding:20px 20px; line-height:25px; }
+.syswindow .msg_mid .msg_cm .icon img { border:0px; vertical-align:middle; margin:10px 20px 10px 10px;}
+.syswindow .msg_mid .msg_cm .icon .left { float:left; width:70px; height:100%;}
+.syswindow .msg_mid .msg_cm .icon .alert { background:url(img/icon_alert.jpg) no-repeat; background-position:0px 0px; height:50px; }
+.syswindow .msg_mid .msg_cm .icon .confirm { background:url(img/icon_confirm.jpg) no-repeat; background-position:0px 0px; height:50px; }
+.syswindow .msg_mid .msg_cm .icon .text { padding-top:15px; padding-bottom:10px; white-space:normal; word-break:break-all; overflow:auto; font-size:14px; }
+.syswindow .msg_mid .msg_cm .operator { padding-top:10px; padding-right:10px; text-align:right; height:40px; }
+.syswindow .msg_mid .msg_cm .operator input.btnWinCancel {cursor: pointer; width:86px; height:32px; color:#000; font-size:14px; outline:none; padding-top:1px; background:url(../../images/bg/input_button_silver2.png) no-repeat; border:0px;}
+.syswindow .msg_mid .msg_cm .operator input.btnWinOK {cursor: pointer; width:86px; height:32px; color:#fff; margin-right:20px; font-size:14px; outline:none; padding-top:1px; background:url(../../images/bg/input_button_blue2.gif) no-repeat; border:0px;}
+
+.syswindow .msg_bott { cursor:move;  height:13px; clear:both; }
+.syswindow .msg_bott .msg_rb{ height:13px; width:13px; float:right; }
+.syswindow .msg_bott .msg_lb{ height:13px; width:13px; float:left; }
+.syswindow .msg_bott .msg_cb{ height:13px; float:left; }
+
+.syswindow .msgheight,.syswindow .msgheight .msg_rt,.syswindow .msgheight .msg_lt,.syswindow .msgheight .msg_ct { height:13px; }
+
+.okMsg { font-size:12px; border: #00be00 1px solid; padding: 2px 5px 2px 25px; background: url(img/msg_ok.gif) #e6ffe6 no-repeat 4px center; color: #000; }
+.warningMsg { font-size:12px; border: #00a8ff 1px solid; padding: 2px 5px 2px 25px; background: url(img/msg_warning.gif) #e2f5ff no-repeat 4px center; color: #000; }
+.errorMsg { font-size:12px;	border: #f60 1px solid; padding: 2px 5px 2px 25px;  background: url(img/msg_error.gif) #fff2e9 no-repeat 4px center; color: #000;}
+.processMsg { font-size:12px; border: #00a8ff 1px solid; padding: 2px 5px 2px 25px; background: url(img/msg_loading.gif) #e2f5ff no-repeat 4px center; color: #000; }
+[class].okMsg,[class].warningMsg,[class].errorMsg,[class].processMsg { padding: 5px 5px 4px 25px; padding: 3px 5px 2px 25px\9; }
+.border0 { border:0px; background-color:Transparent; }
+
+.syswindow .processMsg { font-size:14px; }
+
+._sysmsgtable_ { line-height:normal; }
+.operatorBox { padding:20px; }
+
+.syswindow .msg_top .msg_close2 { display:block; position:absolute; z-index:4010; width:28px; height:17px; margin-left:-28px; margin-top:12px; background:url(img/msg_close2.png) no-repeat; display:none; }
+
+/*.syshtml {overflow:hidden;width:100%;height:100%; }
+.syshtml body { }
+.show { display:block; } .hide { display:none; }
+
+.syswindow { position:fixed; display:block; font-size:12px; z-index:999; top:-1000px; left:-1000px; }
+.syswindow_gray { position:fixed; display:block; width:100%;height:100%; background-color:#333;left:0px;top:0px;opacity:0.4;filter:alpha(opacity=40);z-index:998; }
+.syswindow .cls { clear:both; }
+
+.syswindow .msg_top { height:33px; cursor:move; }
+.syswindow .msg_top .msg_rt{ height:33px; width:13px; float:right; background:url(img/msg_rt.png) no-repeat; _background:url(img/msg_rt.gif) no-repeat; }
+.syswindow .msg_top .msg_lt{ height:33px; width:13px; float:left; background:url(img/msg_lt.png) no-repeat; _background:url(img/msg_lt.gif) no-repeat; }
+.syswindow .msg_top .msg_ct{ height:33px; float:left; background:url(img/msg_ct.png) no-repeat; _background:url(img/msg_ct.gif) no-repeat; }
+.syswindow .msg_top .msg_ct .title { background:url(img/icon_title.gif) no-repeat 0px 14px; padding-left:15px; color:#fff; font-weight:bold; padding-top:15px; white-space:nowrap; word-spacing:normal; word-break: break-all; overflow:hidden;}
+.syswindow .msg_top .msg_ct .b_close { float:right; background:url(img/msg_close.png) no-repeat; _background:url(img/msg_close.gif) no-repeat; width:28px; height:17px; cursor:pointer; margin-top:7px;}
+.syswindow .msg_top .msg_ct .b_close_active { float:right; background:url(img/msg_close_active.png) no-repeat; _background:url(img/msg_close_active.gif) no-repeat; width:28px; height:17px; cursor:pointer; margin-top:7px;}
+.syswindow .msg_top .msg_ct .msg_close { float:right; width:149px; }
+
+.syswindow .msg_mid { }
+.syswindow .msg_mid .msg_rm{ cursor:move; width:13px; float:right; background:url(img/msg_rm.png) no-repeat; _background:url(img/msg_rm.gif) no-repeat; }
+.syswindow .msg_mid .msg_lm{ cursor:move; width:13px; float:left; background:url(img/msg_lm.png) no-repeat; _background:url(img/msg_lm.gif) no-repeat; }
+.syswindow .msg_mid .msg_cm{ float:left; background-color:#fff; _padding-left:2px; }
+.syswindow .msg_mid .msg_cm .icon { padding:20px 20px; line-height:25px; }
+.syswindow .msg_mid .msg_cm .icon img { border:0px; vertical-align:middle; margin:10px 20px 10px 10px;}
+.syswindow .msg_mid .msg_cm .icon .left { float:left; width:70px; height:100%;}
+.syswindow .msg_mid .msg_cm .icon .alert { background:url(img/icon_alert.jpg) no-repeat; background-position:0px 0px; height:50px; }
+.syswindow .msg_mid .msg_cm .icon .confirm { background:url(img/icon_confirm.jpg) no-repeat; background-position:0px 0px; height:50px; }
+.syswindow .msg_mid .msg_cm .icon .text { padding-top:15px; padding-bottom:10px; white-space:normal; word-break:break-all; overflow:auto; }
+.syswindow .msg_mid .msg_cm .operator { padding-top:5px; padding-right:10px; text-align:right; border-top:1px solid #999; height:30px; }
+.syswindow .msg_mid .msg_cm .operator input { width:55px; height:23px; color:#fff; outline:none; padding-top:1px; background:url(img/msg_btn.png) no-repeat; border:0px;}
+
+.syswindow .msg_bott { cursor:move;  height:13px; clear:both; }
+.syswindow .msg_bott .msg_rb{ height:13px; width:13px; float:right; background:url(img/msg_rb.png) no-repeat; _background:url(img/msg_rb.gif) no-repeat; }
+.syswindow .msg_bott .msg_lb{ height:13px; width:13px; float:left; background:url(img/msg_lb.png) no-repeat; _background:url(img/msg_lb.gif) no-repeat; }
+.syswindow .msg_bott .msg_cb{ height:13px; float:left; background:url(img/msg_cb.png) no-repeat; _background:url(img/msg_cb.gif) no-repeat; }
+
+.syswindow .msgheight,.syswindow .msgheight .msg_rt,.syswindow .msgheight .msg_lt,.syswindow .msgheight .msg_ct { height:13px; }
+
+.okMsg { font-size:12px; border: #00be00 1px solid; padding: 2px 5px 2px 23px; background: url(img/msg_ok.gif) #e6ffe6 no-repeat 4px center; color: #000; }
+.warningMsg { font-size:12px; border: #00a8ff 1px solid; padding: 2px 5px 2px 23px; background: url(img/msg_warning.gif) #e2f5ff no-repeat 4px center; color: #000; }
+.errorMsg { font-size:12px;	border: #f60 1px solid; padding: 2px 5px 2px 23px;  background: url(img/msg_error.gif) #fff2e9 no-repeat 4px center; color: #000;}
+.processMsg { font-size:12px; border: #00a8ff 1px solid; padding: 2px 5px 2px 25px; background: url(img/msg_loading.gif) #e2f5ff no-repeat 4px center; color: #000; }
+[class].okMsg,[class].warningMsg,[class].errorMsg,[class].processMsg { padding: 5px 5px 4px 25px; padding: 3px 5px 2px 23px\9; }
+.border0 { border:0px; background-color:Transparent; }
+
+._sysmsgtable_ { line-height:normal; }
+.operatorBox { padding:20px; }
+
+.syswindow .msg_top .msg_close2 { display:block; position:absolute; z-index:4010; width:28px; height:17px; margin-left:-28px; margin-top:12px; background:url(img/msg_close2.png) no-repeat; display:none; }
+*/

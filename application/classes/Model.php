@@ -5,10 +5,9 @@ class Model extends Kohana_Model {
 	public $db;
 
 	public function __construct() {
-		$this->db = Database::instance('alternate');
-		//$this->db->set_charset('utf8');
+		$this->db = Database::instance(UseDB);
+		if (UseDB == 'mysql') $this->db->set_charset('utf8');
 	}
-	//public function __destruct() { $this->db->disconnect(); }
 
 	//开始事务
 	public function begin() {

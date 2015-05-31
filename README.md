@@ -1,5 +1,5 @@
 # kohana-php-admin
-基于kohana-php的后台管理 支持ie6+/ff/opera/chrome/mobile
+基于kohana-php的后台管理 支持ie6+/ff/opera/chrome/mobile。测试：http://admin.relaxlife.net/admin
 
 ###下载代码并设置目录权限
 ```

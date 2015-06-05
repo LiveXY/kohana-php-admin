@@ -80,9 +80,9 @@ body,* { font-size:14px; padding:0; margin:0; }
 					<td><input type="text" class="input" name="username" placeholder="请输入用户名" /></td>
 				</tr><tr>
 					<td><input type="password" class="input" name="password" placeholder="请输入密码" /></td>
-				</tr><tr>
+				</tr><tr style="display:none">
 					<td><input type="text" class="input" name="captcha" placeholder="请输入验证码" /></td>
-				</tr><tr>
+				</tr><tr style="display:none">
 					<td><img src="<?=BASEURI?>captcha" onclick="this.src='<?=BASEURI?>captcha?'+Math.random()" style="cursor:pointer" /></td>
 				</tr><tr>
 					<td><input type="submit" class="input button" value=" 登  陆 " /></td>

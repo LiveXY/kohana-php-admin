@@ -1,5 +1,2 @@
-# Robots.txt file from http://www.happiplay.com
-# All robots will spider the domain
-
 User-agent: *
 Allow: /

@@ -503,7 +503,9 @@
 		$(document).bind("click", function (e) { if (3 != e.which) $(".nav-tab-right-menu").hide(); });
 		me.find("li").live('mousedown', function (e) {
 			var _this = $(this);
-			if (3 == e.which) {
+			if (!_this.hasClass('active')) return false;
+			if (e && e.toElement && e.toElement.localName && e.toElement.localName == 'i') return false;
+			//if (3 == e.which) {
 				$(".nav-tab-right-menu").hide();
 				if (_this.find("i").length == 0) {
 					$(".nav-tab-right-menu a,.nav-tab-right-menu i").hide();
@@ -518,7 +520,7 @@
 				}).show();
 				me.current = _this;
 				return false;
-			};
+			//};
 		});
 
 		$(".nav-tab-close").click(function () {

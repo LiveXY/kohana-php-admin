@@ -802,7 +802,7 @@ $.fn.window = function (options) {
 		});
 
 		win.find(".msg_lm,.msg_rm").height(win.find(".msg_cm").height());
-		if (opts.isClose) $(document).keypress(function (e) { e = window.event || e; if (e.keyCode == 27) { win.find(".b_close").click(); $(document).unbind("keypress"); } });
+		if (opts.isClose) $(document).keyup(function (e) { e = window.event || e; if (e.keyCode == 27) { win.find(".b_close").click(); $(document).unbind("keyup"); } });
 
 		var initPos = function (isopen) {
 			var winSize = { w: me.width(), h: me.height() };

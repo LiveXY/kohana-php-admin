@@ -407,8 +407,9 @@ class Util {
 	//取浏览器语言
 	public static function determineLang() {
 		$lang = substr(@$_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 4); //只取前4位，这样只判断最优先的语言。如果取前5位，可能出现en,zh的情况，影响判断。
-		//if (preg_match("/zh-c/i", $lang)) return "zh_CN"; else
-		if (preg_match("/zh/i", $lang)) return "zh_TW";
+		if (preg_match("/zh-c/i", $lang)) return "zh_CN";
+		if (preg_match("/zh-hans/i", $lang)) return "zh_CN";
+		else if (preg_match("/zh/i", $lang)) return "zh_TW";
 		//else if (preg_match("/en/i", $lang)) return "en_US";
 		//else if (preg_match("/fr/i", $lang)) return "fr_FR";
 		//else if (preg_match("/de/i", $lang)) return "de_DE";
